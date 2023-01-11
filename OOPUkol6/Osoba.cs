@@ -9,12 +9,12 @@ namespace OOPUkol6
 {
     internal class Osoba
     {
-        string jmeno;
-        string prijmeni;
-        int hmotnost;
-        double vyska;
+       protected string jmeno;
+       protected string prijmeni;
+       protected int hmotnost;
+       protected double vyska;
 
-        string Jmeno
+       protected string Jmeno
         {
             get
             {
@@ -25,7 +25,7 @@ namespace OOPUkol6
                 jmeno = value;
             }
         }
-        string Prijmeni
+       protected string Prijmeni
         {
             get
             {
@@ -36,7 +36,7 @@ namespace OOPUkol6
                 prijmeni = value;
             }
         }
-        int Hmotnost
+       protected int Hmotnost
         {
             get => hmotnost;
             set
@@ -51,7 +51,7 @@ namespace OOPUkol6
                 }
             }
         }
-        double Vyska
+       protected double Vyska
         {
             get => vyska;
             set
@@ -69,15 +69,15 @@ namespace OOPUkol6
 
         public Osoba(string jmeno,string prijmeni,int hmotnost, double vyska)
         {
-            this.jmeno = jmeno;
-            this.prijmeni = prijmeni;
-            this.hmotnost = hmotnost;
-            this.vyska = vyska;
+            this.Jmeno = jmeno;
+            this.Prijmeni = prijmeni;
+            this.Hmotnost = hmotnost;
+            this.Vyska = vyska;
         }
 
         public double BMI()
         {
-            return hmotnost / (vyska * vyska);
+            return Math.Round( hmotnost / (vyska * vyska),2);
         }
 
         public override string ToString()
