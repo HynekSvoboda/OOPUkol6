@@ -164,7 +164,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(131, 26);
             this.textBox5.TabIndex = 11;
-            this.textBox5.Text = "0,09";
+            this.textBox5.Text = "0,9";
             // 
             // label6
             // 
