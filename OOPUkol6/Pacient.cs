@@ -25,7 +25,7 @@ namespace OOPUkol6
         }
         public double ABSI()
         {
-            return Math.Round(obvodpasu / (Math.Pow(BMI(), 0.66666666666) * (Math.Pow(vyska, 0.5)))*10, 3);
+            return Math.Round(obvodpasu / (Math.Pow(BMI(), 0.66666666666) * (Math.Pow(vyska, 0.5))), 3);
         }
         public override string ToString()
         {
